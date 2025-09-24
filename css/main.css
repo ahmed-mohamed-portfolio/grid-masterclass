@@ -1,0 +1,850 @@
+/* notes */
+/* container with max width */
+/* dont do padding or margin by percentage */
+/* font ,row & col grid ,296,old responsive in mobile*/
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium', sans-serif;
+    src: url("../webfonts/Montserrat-SemiBold.ttf") format("truetype");
+
+}
+
+@font-face {
+    font-family: 'Arvo', sans-serif;
+    src: url("../webfonts/Arvo-Italic.ttf") format("truetype");
+}
+
+:root {
+    --main-font: 'Montserrat-Medium', sans-serif;
+    --second-font: 'Arvo', sans-serif;
+    --third-font: 'Open Sans', sans-serif;
+}
+
+
+
+
+.drow {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 0.91fr 1.36fr 0.89fr 0.81fr 1.75fr 0.58fr 0.74fr 1.76fr 0.42fr 0.781fr; */
+
+    grid-template-areas:
+        "learn"
+        "iphone"
+        "keyboard"
+        "games"
+        "imac"
+        "twitter"
+        "muchBetter"
+        "iCloud"
+        "experience"
+        "vision";
+}
+
+
+/*--------------------------- */
+
+.learn {
+
+    grid-area: learn;
+    background-color: rgb(247, 248, 249);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 0;
+}
+
+.learn span {
+    font-family: var(--main-font);
+    color: #9fa3a7;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.learn h1 {
+    font-family: var(--second-font);
+    color: #333;
+    font-size: 42px;
+    line-height: 1.4em;
+    font-weight: 400;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    text-align: center;
+    max-width: 100%;
+
+
+}
+
+.learn a {
+    color: #27b9c2;
+    font-family: var(--third-font);
+    line-height: 1.625rem;
+    font-size: 0.875rem;
+}
+
+/*--------------------------- */
+
+.iphone {
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 10%;
+    padding-right: 6%;
+    padding-left: 6%;
+
+    grid-area: iphone;
+}
+
+.iphone span {
+    font-family: var(--main-font);
+    color: #9fa3a7;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.iphone h2 {
+    margin-top: 2.5%;
+    margin-bottom: 1.25rem;
+    font-family: var(--second-font);
+    font-size: 1.375rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.iphone p {
+    color: #9fa3a7;
+    font-family: var(--third-font);
+    line-height: 1.625rem;
+    font-size: 0.875rem;
+}
+
+.iphone img {
+    width: 70.5%;
+    margin-top: 11%;
+    margin-left: 10%;
+}
+
+/*--------------------------- */
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    grid-area: keyboard;
+    background-color: rgb(240, 86, 56);
+    padding: 10% 0;
+
+}
+
+.keyboard img {
+    width: 80%;
+    max-width: 100%;
+
+}
+
+.keyboard h3 {
+    max-width: 60%;
+    margin-top: 3%;
+    font-family: var(--second-font);
+    font-size: 22px;
+    font-weight: bold;
+    color: #fffbfb;
+    text-align: center;
+    line-height: 32px;
+}
+
+.keyboard a {
+    color: #ffc80a;
+    margin-top: 5%;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--third-font);
+    line-height: 26px;
+}
+
+/*--------------------------- */
+
+.games {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(247, 248, 249);
+    padding: 8% 0;
+    grid-area: games;
+}
+
+.games img {
+    width: 60%;
+    max-width: 100%;
+
+    position: relative;
+    left: -7%;
+}
+
+.games h3 {
+    width: 54%;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-family: var(--second-font);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.games a {
+    margin-top: 5%;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #27b9c2;
+    font-family: var(--third-font);
+    line-height: 26px;
+}
+
+/*--------------------------- */
+
+
+.imac {
+    grid-area: imac;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 13%;
+    padding-top: 17%;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+.imac .p1 {
+    margin-bottom: 8%;
+}
+
+.imac .p1 span {
+    font-family: var(--main-font);
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.imac .p1 h3 {
+    margin-top: 3%;
+    font-family: var(--second-font);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333;
+    width: 80%;
+
+}
+
+.imac .p1 img {
+    left: -5%;
+    width: 87%;
+    margin-top: 10%;
+    position: relative;
+
+}
+
+.imac .p2 p {
+    color: #9fa3a7;
+    font-family: var(--third-font);
+    line-height: 26px;
+    font-size: 14px;
+    width: 85%;
+
+}
+
+.imac .p2 a {
+    margin-top: 6%;
+    /* display: inline-block;   ليه لازم*/
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #27b9c2;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    display: inline-block;
+
+}
+
+/*--------------------------- */
+
+
+
+.twitter {
+
+    background-color: #38d5f4;
+    grid-area: twitter;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.twitter .inner {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    background-color: #35cfed;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+}
+
+.twitter img {
+    width: 20%;
+}
+
+
+.twitter h3 {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-family: var(--second-font);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #fff;
+    width: 60%;
+    text-align: center;
+}
+
+/*--------------------------- */
+
+.muchBetter {
+    grid-area: muchBetter;
+    background-image: url("../img/UX.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-color: #93b6b7;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+
+    padding-top: 5.5%;
+}
+
+
+.sp {
+    padding-left: 4%;
+    align-self: flex-start;
+}
+
+.muchBetter .sp span {
+
+
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fa684f;
+
+    font-family: var(--third-font);
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    color: #fff;
+
+}
+
+
+
+.muchBetter h3 {
+
+    max-width: 70%;
+
+    font-family: var(--second-font);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: bold;
+
+    color: #fff;
+    text-align: center;
+
+    margin: 1.5% auto;
+}
+
+
+.muchBetter img {
+
+    width: 90%;
+    align-self: flex-start;
+
+}
+
+
+
+/*--------------------------- */
+
+.iCloud {
+    overflow: hidden;
+    grid-area: iCloud;
+    background-color: #8f76bc;
+
+    padding: 8% 5% 18%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.iCloud .circle {
+    width: 373px;
+    height: 373px;
+    border-radius: 50%;
+    background-color: #8166b0;
+
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.iCloud .circle span:first-child {
+    padding: 2px 13px 1px 30px;
+    border-radius: 60px;
+    background-color: hsla(0, 0%, 100%, .08);
+    background-image: url(../img/Shape.png);
+    background-position: 11px 50%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    font-family: var(--third-font);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 2.4px;
+    color: #fff;
+    text-align: center;
+
+}
+
+
+
+
+.iCloud .circle img {
+    width: 66%;
+    margin-top: 5%;
+
+}
+
+
+
+.iCloud .circle span:not(:first-child) {
+    font-family: var(--main-font);
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.iCloud h2 {
+    font-family: var(--second-font);
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 5%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.iCloud p {
+    width: 80%;
+    max-width: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+    font-family: var(--third-font);
+    font-size: 14px;
+}
+
+.iCloud a {
+    margin-top: 10%;
+    padding: 14px 28px;
+    border-radius: 50px;
+
+    background-color: #ffc80a;
+    color: #000;
+
+    font-family: var(--third-font);
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    line-height: 26px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*--------------------------- */
+
+.experience {
+    /* padding-top: 8%;
+    padding-bottom: 8%; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    grid-area: experience;
+
+    background-color: #f7f8f9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience span {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+
+    background-color: #7bc424;
+    color: #fff;
+
+    font-family: var(--third-font);
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+.experience h3 {
+
+    width: 60%;
+    text-align: center;
+    line-height: 32px;
+    /* margin-top: 2.9%;
+    margin-bottom: 5.2%; */
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: var(--second-font);
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;
+}
+
+
+/*--------------------------- */
+
+.vision {
+    grid-area: vision;
+
+    padding-bottom: 30px;
+    padding-right: 5%;
+    padding-left: 5%;
+
+    background-color: #2c2c2c;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.vision img {
+    width: 240px;
+    margin-right: 20%;
+}
+
+
+
+.vision h3 {
+
+    width: 100%;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+
+    font-family: var(--second-font);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/*--------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------- */
+
+
+@media (min-width:480px) {
+
+    .drow {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+            "learn learn"
+            "iphone iphone"
+            "keyboard games"
+            "imac imac"
+            "twitter iCloud"
+            "muchBetter iCloud"
+            "experience experience"
+            "vision vision";
+    }
+
+
+
+
+
+
+    .learn {
+
+
+        padding: 6% 0;
+    }
+
+    .learn h1 {
+        line-height: 1.4em;
+        font-size: 37px;
+        /* لما الخط يظبط حتحتاج تخليها 35 */
+        max-width: 75%;
+        margin-bottom: 0.5%;
+
+    }
+
+
+
+
+    /*--------------------------- */
+
+    .iphone {
+
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 11%;
+        padding-top: 1%;
+
+    }
+
+    .iphone .part1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 4%;
+    }
+
+
+
+
+    .iphone img {
+        width: 42%;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+
+    /*--------------------------- */
+
+
+    .keyboard {
+        padding: 50px 0;
+
+    }
+
+    .keyboard img {
+        width: 100%;
+
+    }
+
+
+    /*--------------------------- */
+
+    .imac {
+
+        padding-top: 10%;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10%;
+        padding-bottom: 0px;
+
+    }
+
+
+    .imac .p1 {
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .imac .p1 img {
+        left: -10%;
+        width: 70%;
+        margin-top: 10%;
+        position: relative;
+        max-width: 100%;
+
+    }
+
+    .imac .p2 {
+        width: 100%;
+
+    }
+
+
+
+
+
+    /*--------------------------- */
+
+
+    .muchBetter {
+
+
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+    }
+
+
+
+    /*--------------------------- */
+
+    .vision {
+
+        flex-direction: row;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 10%;
+    }
+
+    .vision img {
+        width: 260px;
+        padding-top: 2%;
+        margin-right: 0;
+
+        position: relative;
+        left: -20px;
+    }
+
+
+    .vision h3 {
+        width: 60%;
+        text-align: left;
+
+    }
+
+    /*--------------------------- */
+
+
+}
+
+
+
+
+@media (min-width:992px) {
+
+    .drow {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        grid-template-areas:
+            "iphone iphone learn learn"
+            "iphone iphone learn learn"
+            "keyboard imac imac iCloud"
+            "keyboard imac imac iCloud"
+            "games muchBetter muchBetter iCloud"
+            "games muchBetter muchBetter iCloud"
+            "twitter experience vision vision";
+    }
+
+
+    /*--------------------------- */
+
+
+    .imac .p1 h3 {
+        padding-top: 15%;
+    }
+
+    .imac .p1 img {
+        padding-top: 15%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /*--------------------------- */
+
+
+}
